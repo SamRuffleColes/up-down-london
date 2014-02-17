@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/project"
+        style="@style/Text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/copyright"
+        style="@style/Text" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/Text"
+        android:text="@string/apache2" />
+
+</LinearLayout>

@@ -23,9 +23,6 @@ public class AboutFragment extends Fragment {
 		Button feedbackButton = (Button) v.findViewById(R.id.feedback);
 		feedbackButton.setOnClickListener(new FeedbackClickListener());
 
-		TextView furtherInfoLink = (TextView) v.findViewById(R.id.furtherInfo);
-		furtherInfoLink.setOnClickListener(new OpenWebsiteFAQListener());
-
 		applyRobotoTypefaceToAllViewsRecursively(v);
 
 		return v;
@@ -53,26 +50,10 @@ public class AboutFragment extends Fragment {
 		startActivity(Intent.createChooser(emailIntent, null));
 	}
 
-	private void openWebsiteFAQ() {
-		String faqUrl = getString(R.string.url_faq);
-		Uri uri = Uri.parse(faqUrl);
-
-		Intent faqIntent = new Intent(Intent.ACTION_VIEW);
-		faqIntent.setData(uri);
-		startActivity(faqIntent);
-	}
-
 	private class FeedbackClickListener implements OnClickListener {
 		@Override
 		public void onClick(View v) {
 			sendFeedbackEmail();
-		}
-	}
-
-	private class OpenWebsiteFAQListener implements OnClickListener {
-		@Override
-		public void onClick(View v) {
-			openWebsiteFAQ();
 		}
 	}
 

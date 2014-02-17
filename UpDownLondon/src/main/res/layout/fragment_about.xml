@@ -1,31 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:udl="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:padding="10dp" >
-    
-    <TextView
-        style="@style/Text.Title"
-        android:text="@string/about_title" />
-    
-    <TextView
-        style="@style/Text"
-        android:text="@string/about_text"
-        android:layout_marginTop="20dp" />
-    
-    <TextView
-        android:id="@+id/furtherInfo"
-        style="@style/Text"
-        android:text="@string/about_further_info"
-        android:layout_marginTop="20dp" />
-    
-    <Button
-        android:id="@+id/feedback"
-        android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/feedback"
-        android:layout_marginTop="50dp" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
 
-</LinearLayout>
+        <TextView
+            style="@style/Text.Title"
+            android:text="@string/about_title" />
+
+        <TextView
+            style="@style/Text"
+            android:text="@string/about_text"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            style="@style/Text"
+            android:text="@string/licence_info"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/furtherInfo"
+            style="@style/Text"
+            android:text="@string/about_further_info"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:layout_marginTop="50dp"
+            style="@style/Text.Title"
+            android:text="@string/open_source_projects_used" />
+
+        <uk.co.samcoles.updownlondon.ui.widget.Apache2LicenceView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            udl:project="@string/title_abptr"
+            udl:copyright="@string/copyright_abptr"
+            android:layout_marginTop="20dp"/>
+
+        <uk.co.samcoles.updownlondon.ui.widget.Apache2LicenceView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            udl:project="@string/title_jta"
+            udl:copyright="@string/copyright_jta"
+            android:layout_marginTop="10dp" />
+
+        <uk.co.samcoles.updownlondon.ui.widget.Apache2LicenceView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            udl:project="@string/title_gson"
+            udl:copyright="@string/copyright_gson"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="FLOSSLicence">
+        <attr name="project" format="string" />
+        <attr name="copyright" format="string" />
+    </declare-styleable>
+</resources>
