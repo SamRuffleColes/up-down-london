@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Up Down London</string>
+    <string name="feed_url">http://updownlondon.com/android-sc.json</string>
+    <string name="about">About</string>
+    <string name="about_title">About Up Down London for Android</string>
+    <string name="about_text">Up Down London for Android was developed by Sam Coles, using the UpDownLondon feed developed by Kirk Northrop, based on an idea by Christiane Link, with an icon designed by Oliver Kay.</string>
+    <string name="feedback">Give feedback&#8230;</string>
+    <string name="feedback_subject">Up Down London Android</string>
+    <string name="about_further_info">For further info, please visit <u>UpDownLondon.com</u></string>
+    
+    <string-array name="feedback_emails">
+        <item>samcoles@samcoles.co.uk</item>
+        <item>tubetimes@jaggedseam.com</item>
+    </string-array>
+    
+    <string name="url_faq">http://updownlondon.com/faq</string>
+
+</resources>
